@@ -1135,28 +1135,28 @@ def build_education_hover(group):
         )
 
          lines.append(
-            "Aantal studenten in 2023: "
+            "2023: "
             + format_student_count(
                 row.get("2023")
             )
         )
 
         lines.append(
-            "Aantal studenten in 2024: "
+            "2024: "
             + format_student_count(
                 row.get("2024")
             )
         )
 
         lines.append(
-            "Aantal studenten in 2025: "
+            "2025: "
             + format_student_count(
                 row.get("2025")
             )
         )
 
         lines.append(
-            "3-jarig gemiddelde aantal studenten: "
+            "3-jarig gemiddelde studenten: "
             + format_student_count(
                 row.get(
                     "3 jarig gemiddelde studenten"
@@ -1165,7 +1165,7 @@ def build_education_hover(group):
         )
 
         lines.append(
-            "Varianten van studie: "
+            "Varianten: "
             + format_general_value(
                 row.get("Varianten")
             )
