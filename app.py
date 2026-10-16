@@ -1134,22 +1134,22 @@ def build_education_hover(group):
             )
         )
 
-         lines.append(
-            "2023: "
+        lines.append(
+            "Aantal studenten 2023: "
             + format_student_count(
                 row.get("2023")
             )
         )
 
         lines.append(
-            "2024: "
+            "Aantal studenten 2024: "
             + format_student_count(
                 row.get("2024")
             )
         )
 
         lines.append(
-            "2025: "
+            "Aantal studenten 2025: "
             + format_student_count(
                 row.get("2025")
             )
@@ -1165,7 +1165,7 @@ def build_education_hover(group):
         )
 
         lines.append(
-            "Varianten: "
+            "Varianten studie: "
             + format_general_value(
                 row.get("Varianten")
             )
@@ -1662,7 +1662,7 @@ def select_education_data(
         st.session_state.selected_education_cluster = clusters[0]
 
     st.sidebar.markdown("### Cluster")
-    
+
     selected_cluster = st.sidebar.selectbox(
         "Cluster",
         clusters,
