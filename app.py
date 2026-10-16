@@ -1661,10 +1661,13 @@ def select_education_data(
     ):
         st.session_state.selected_education_cluster = clusters[0]
 
+    st.sidebar.markdown("### Cluster")
+    
     selected_cluster = st.sidebar.selectbox(
-        "### Cluster",
+        "Cluster",
         clusters,
         key="selected_education_cluster",
+        label_visibility="collapsed",
     )
 
     filtered = filter_cluster(
@@ -1858,14 +1861,17 @@ def main():
     # Gegevensbron kiezen
     # -------------------------------------------------------------------------
 
+    st.sidebar.markdown("### Kies gegevensbron")
+
     sheet = st.sidebar.radio(
-        "### Kies gegevensbron",
+        "Kies gegevensbron",
         [
             "opleidingen",
             "varianten",
         ],
         horizontal=True,
         key="selected_sheet",
+        label_visibility="collapsed",
     )
 
     st.sidebar.divider()
