@@ -1662,7 +1662,7 @@ def select_education_data(
         st.session_state.selected_education_cluster = clusters[0]
 
     selected_cluster = st.sidebar.selectbox(
-        "Cluster",
+        "### Cluster",
         clusters,
         key="selected_education_cluster",
     )
@@ -1859,7 +1859,7 @@ def main():
     # -------------------------------------------------------------------------
 
     sheet = st.sidebar.radio(
-        "Kies gegevensbron",
+        "### Kies gegevensbron",
         [
             "opleidingen",
             "varianten",
