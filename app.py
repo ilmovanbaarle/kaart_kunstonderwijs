@@ -1827,29 +1827,7 @@ def main():
         )
     )
 
-    uploaded_file = (
-        st.sidebar.file_uploader(
-            "Excelbestand",
-            type=["xlsx"],
-        )
-    )
-
-    if uploaded_file is not None:
-        source = uploaded_file
-    else:
-        source = default_file
-
-    if (
-        uploaded_file is None
-        and not default_file.exists()
-    ):
-
-        st.info(
-            f"Upload {DEFAULT_WORKBOOK} "
-            "via het paneel links."
-        )
-
-        st.stop()
+    source = default_file
 
     # -------------------------------------------------------------------------
     # Data inlezen
